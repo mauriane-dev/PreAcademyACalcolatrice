@@ -59,5 +59,27 @@ namespace PreAcademyACalcolatrice.Test
             Assert.Null(risultato);
         }
 
+        [Fact]
+        public void TestVerificaSeAMaggioreDiB()
+        {
+            //ARRANGE: predisposizione del test
+            Calculator calcolatrice = new Calculator();
+            //ACT: chiamata alla funzionalità da testare
+            bool risultato = calcolatrice.VerificaSeAMaggioreDiB(3, 1);
+            //ASSERT: valutazione del risultato atteso vs restituito
+            Assert.True(risultato == true);
+        }
+
+        [Fact]
+        public void TestVerificaSeAMaggioreDiB2()
+        {
+            //ARRANGE: predisposizione del test
+            Calculator calcolatrice = new Calculator();
+            //ACT: chiamata alla funzionalità da testare
+            bool risultato = calcolatrice.VerificaSeAMaggioreDiB(3.2, 3.2);
+            //ASSERT: valutazione del risultato atteso vs restituito
+            Assert.True(risultato == true);
+        }
+
     }
 }
