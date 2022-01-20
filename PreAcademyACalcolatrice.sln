@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyACalcolatrice.ConsoleApp", "PreAcademyACalcolatrice.ConsoleApp\PreAcademyACalcolatrice.ConsoleApp.csproj", "{E2FD61B1-9A34-4A86-88B1-7FF322F933B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyACalcolatrice.ConsoleApp", "PreAcademyACalcolatrice.ConsoleApp\PreAcademyACalcolatrice.ConsoleApp.csproj", "{E2FD61B1-9A34-4A86-88B1-7FF322F933B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyACalcolatrice.Core", "PreAcademyACalcolatrice.Core\PreAcademyACalcolatrice.Core.csproj", "{C6DB2DA2-D095-4326-835E-DFAF03FAA619}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyACalcolatrice.Core", "PreAcademyACalcolatrice.Core\PreAcademyACalcolatrice.Core.csproj", "{C6DB2DA2-D095-4326-835E-DFAF03FAA619}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyACalcolatrice.Test", "PreAcademyACalcolatrice.Test\PreAcademyACalcolatrice.Test.csproj", "{BDA8D5A5-A008-4201-B8D3-91396426A4F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyACalcolatrice.Test", "PreAcademyACalcolatrice.Test\PreAcademyACalcolatrice.Test.csproj", "{BDA8D5A5-A008-4201-B8D3-91396426A4F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyACalcolatrice.WinForms", "PreAcademyACalcolatrice.WinForms\PreAcademyACalcolatrice.WinForms.csproj", "{8DA22F25-E830-4073-9144-023E02E501BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreAcademyACalcolatrice.WinForms", "PreAcademyACalcolatrice.WinForms\PreAcademyACalcolatrice.WinForms.csproj", "{8DA22F25-E830-4073-9144-023E02E501BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreAcademyACalcolatrice.WPF", "PreAcademyACalcolatrice.WPF\PreAcademyACalcolatrice.WPF.csproj", "{8C7F7786-36DA-4C9D-946B-4BFFE7593853}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8DA22F25-E830-4073-9144-023E02E501BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DA22F25-E830-4073-9144-023E02E501BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DA22F25-E830-4073-9144-023E02E501BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7F7786-36DA-4C9D-946B-4BFFE7593853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7F7786-36DA-4C9D-946B-4BFFE7593853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7F7786-36DA-4C9D-946B-4BFFE7593853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7F7786-36DA-4C9D-946B-4BFFE7593853}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

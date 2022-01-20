@@ -1,0 +1,50 @@
+﻿<Window x:Class="PreAcademyACalcolatrice.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PreAcademyACalcolatrice.WPF"
+        mc:Ignorable="d"
+        Title="My Calculator" Height="379" Width="354">
+    <Grid>
+        <Grid.RowDefinitions>
+            <!--Indico tanti tag RowDefinition in base a quante righe voglio -->
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblRisultato" Content="Risultato" HorizontalAlignment="Center" VerticalAlignment="Top" Height="31" Width="69" FontWeight="Bold" FontSize="11" Margin="0,30,0,0" Grid.RowSpan="2"/>
+        <TextBox x:Name="textValue" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="235" Height="40" IsReadOnly="True"/>
+        <Button x:Name="btnClear" Grid.Column="3" Content="C" HorizontalAlignment="Center" Height="40" Grid.Row="1" VerticalAlignment="Center" Width="45" Background="#FFED5C28" Click="btnClear_Click"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Center" Height="40" Grid.Row="2" VerticalAlignment="Center" Width="45" Click="btn7_Click"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Center" Height="40" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Width="45" Click="btn8_Click"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Center" Height="40" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Width="45" Click="btn9_Click"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Center" Height="40" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Width="45" Click="btn4_Click"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Center" Height="40" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Width="45" Click="btn5_Click"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Center" Height="40" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Width="45" Click="btn6_Click"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Center" Height="40" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Width="45" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Center" Height="40" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Width="45" Click="btn2_Click"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Center" Height="40" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Width="45" Click="btn3_Click"/>
+        <Button x:Name="btnVirgola" Content="," HorizontalAlignment="Center" Height="40" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Width="45" Click="btnVirgola_Click"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Center" Height="40" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Width="45" Click="btn0_Click"/>
+        <Button x:Name="btnUguale" Content="=" HorizontalAlignment="Center" Height="40" Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" Width="45" Background="#FF5EBF1E" Click="btnUguale_Click"/>
+        <Button x:Name="btnDividi" Content="/" HorizontalAlignment="Center" Height="40" Grid.Row="5" Grid.Column="3" VerticalAlignment="Center" Width="45" Background="#FFDCC109" Tag="dividi" Click="btnDividi_Click"/>
+        <Button x:Name="btnSomma" Content="+" HorizontalAlignment="Center" Height="40" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" Width="45" Background="#FFDCC109" Click="btnSomma_Click" Tag="somma"/>
+        <Button x:Name="btnSottrai" Content="-" HorizontalAlignment="Center" Height="40" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" Width="45" Background="#FFDCC109" Tag="sottrai" Click="btnSottrai_Click"/>
+        <Button x:Name="btnMoltiplica" Content="x" HorizontalAlignment="Center" Height="40" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" Width="45" Background="#FFDCC109" Tag="moltiplica" Click="btnMoltiplica_Click"/>
+        <Menu x:Name="Menu" Grid.ColumnSpan="4" Margin="0,0,0,42">
+            <MenuItem Header="File">
+                <MenuItem x:Name="Exit" Header="Exit" Click="Exit_Click" ToolTip="Clicca per uscire dalla calcolatrice" ToolTipService.ShowDuration="5000"></MenuItem>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
